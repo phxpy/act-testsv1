@@ -44,7 +44,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ needs.build.outputs.var1 }} + ${{ needs.build.outputs.var2 }}
+      - run: echo ${{ needs.build.outputs.var1 }}${{ needs.build.outputs.var2 }}
       - name: Deploy
         run: echo "Deploying..."
       - name: Get website
