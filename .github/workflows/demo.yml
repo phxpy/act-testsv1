@@ -44,4 +44,4 @@ jobs:
         with:
           name: dist-files
       - name: list files
-        run: ls
+        run: ls -R
